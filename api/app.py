@@ -1,13 +1,13 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from flask import Flask, request
-
-# cd api
-# flask --app app run
+from huggingface_hub import login
 
 app = Flask(__name__)
 
-model_name = 'gpt2-medium'
+login(token="")
+
+model_name = 'mistralai/Mistral-7B-v0.3'
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
     torch_dtype=torch.float16,
@@ -38,5 +38,4 @@ def inference():
     )
 
     output_text = tokenizer.decode(output[0][prompt_len:], skip_special_tokens=True)
-
     return {'output': output_text}
