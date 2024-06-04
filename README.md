@@ -27,3 +27,8 @@ This project provides an API for text generation using a pre-trained model, alon
     ```bash
     streamlit run interface.py
     ```
+
+## Project Status and Future Plans
+
+This project is currently in development. The goal is to create a fine-tuning process using models with fewer parameters to perform specific text-related tasks. This will allow for more specialized and efficient text generation capabilities tailored to particular use cases.
+
