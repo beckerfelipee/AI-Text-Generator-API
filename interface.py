@@ -1,8 +1,6 @@
 import streamlit as st
 import requests
 
-# streamlit run ui.py
-
 # Start Webpage
 st.set_page_config(page_title="API Request", page_icon="🚀")
 
