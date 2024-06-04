@@ -27,11 +27,3 @@ This project provides an API for text generation using a pre-trained model, alon
     ```bash
     streamlit run interface.py
     ```
-
-## Dependencies
-
-- torch
-- transformers
-- flask
-- streamlit
-- requests
